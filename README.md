@@ -1,4 +1,3 @@
-
 <p align="center">
 <img src="https://raw.githubusercontent.com/rudoapps/hybrid-hub-vault/main/flutter/images/hybrid-calendar/banner.png" width="100%" alt="Banner">
 </p>
@@ -16,17 +15,6 @@ A highly customizable and feature-rich Flutter calendar widget with support for 
 - **Adjacent Month Days** - Show or hide days from previous/next months
 - **Localization Support** - Automatic localization based on device locale
 - **Flexible Configuration** - Extensive configuration options for all use cases
-
-## Installation
-
-Add this to your `pubspec.yaml`:
-
-```yaml
-dependencies:
-  hybrid_calendar: ^1.0.0
-  flutter_bloc: ^8.1.0
-  easy_localization: ^3.0.0
-```
 
 ## Quick Start
 
@@ -258,15 +246,12 @@ void main() async {
 }
 ```
 
-## Platform Support
+## Credits
 
-- ✅ iOS
-- ✅ Android
+Built with:
 
-## Dependencies
-
-- `flutter_bloc: ^8.1.0` - State management
-- `easy_localization: ^3.0.0` - Internationalization support
+- [flutter_bloc](https://pub.dev/packages/flutter_bloc)
+- [easy_localization](https://pub.dev/packages/easy_localization)
 
 ## Author ✒️
 

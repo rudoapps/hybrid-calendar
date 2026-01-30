@@ -197,10 +197,14 @@ class CalendarBloc extends Bloc<CalendarEvent, CalendarState> {
       );
 
       /// Already at minimum month
-      if (currentMonth.year == minMonth.year && currentMonth.month == minMonth.month) return;
+      if (currentMonth.year == minMonth.year && currentMonth.month == minMonth.month) {
+        return;
+      }
 
       /// Before minimum month
-      if (currentMonth.isBefore(minMonth)) return;
+      if (currentMonth.isBefore(minMonth)) {
+        return;
+      }
     }
 
     /// CALCULATE NEW MONTH
@@ -266,10 +270,14 @@ class CalendarBloc extends Bloc<CalendarEvent, CalendarState> {
       );
 
       /// Already at maximum month
-      if (currentMonth.year == maxMonth.year && currentMonth.month == maxMonth.month) return;
+      if (currentMonth.year == maxMonth.year && currentMonth.month == maxMonth.month) {
+        return;
+      }
 
       /// After maximum month
-      if (currentMonth.isAfter(maxMonth)) return;
+      if (currentMonth.isAfter(maxMonth)) {
+        return;
+      }
     }
 
     /// CALCULATE NEW MONTH
@@ -409,8 +417,9 @@ class CalendarBloc extends Bloc<CalendarEvent, CalendarState> {
     if (!CalendarUtils.isDateSelectable(
       day: event.selectedDate,
       config: _config,
-    ))
+    )) {
       return;
+    }
 
     /// UPDATE SELECTED DATE
     emit(
